@@ -10,25 +10,21 @@ import browser.Browsers;
 import pages.HomePage;
 
 public class TestNG extends Browsers {
-	
+
 	WebDriver driver;
-	
+
 	@Test
-	public void ClickOnTables() throws InterruptedException {
+	public void ClickOnTables() {
 		TestNG ObjTestNG = new TestNG();
 		driver = ObjTestNG.ChoseBrowser(driver, "Chrome");
+		driver.get("www.abc.com");
 		driver.get("http://www.uitestingplayground.com/");
-		
 		HomePage ObjHomePage = new HomePage(driver);
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//		JavascriptExecutor js = (JavascriptExecutor)driver;
-//		js.executeScript("Window.scrollBy(0,350)", "");
 		ObjHomePage.EnterDetails();
-		
+
 		driver.navigate().back();
 		ObjHomePage.ClickOnLoadDelay();
-		
-		
+
 	}
 
 }

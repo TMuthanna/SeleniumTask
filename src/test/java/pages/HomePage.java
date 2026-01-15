@@ -23,16 +23,17 @@ public class HomePage {
 	Utils ObjUtils = new Utils();
 
 	public void EnterDetails() {
+
 		ObjUtils.Click(driver, Text);
 		ObjUtils.Sendkeys(driver, MyButton, "FirstButton");
 		ObjUtils.Click(driver, ButtonUpdate);
 		ObjUtils.GetText(driver, ButtonUpdate);
 
 	}
+
 	public void ClickOnLoadDelay() {
 		ObjUtils.Click(driver, LoadDelay);
-		
-		
+
 	}
 
 }
