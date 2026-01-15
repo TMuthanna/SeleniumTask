@@ -25,6 +25,9 @@ public class TestNG extends Browsers {
 //		js.executeScript("Window.scrollBy(0,350)", "");
 		ObjHomePage.EnterDetails();
 		
+		driver.navigate().back();
+		ObjHomePage.ClickOnLoadDelay();
+		
 		
 	}
 

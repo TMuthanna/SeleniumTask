@@ -18,6 +18,7 @@ public class HomePage {
 	By Text = By.linkText("Text Input");
 	By MyButton = By.cssSelector("#newButtonName");
 	By ButtonUpdate = By.cssSelector("#updatingButton");
+	By LoadDelay = By.cssSelector("[href='/loaddelay']");
 
 	Utils ObjUtils = new Utils();
 
@@ -27,6 +28,11 @@ public class HomePage {
 		ObjUtils.Click(driver, ButtonUpdate);
 		ObjUtils.GetText(driver, ButtonUpdate);
 
+	}
+	public void ClickOnLoadDelay() {
+		ObjUtils.Click(driver, LoadDelay);
+		
+		
 	}
 
 }
