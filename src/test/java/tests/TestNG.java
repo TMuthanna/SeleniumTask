@@ -15,15 +15,19 @@ public class TestNG extends Browsers {
 	
 	@Test
 	public void ClickOnTables() throws InterruptedException {
+		//To Check the conflicts
+		//To Check the conflicts
+		//To Check the conflicts
+		//To Check the conflicts
 		TestNG ObjTestNG = new TestNG();
 		driver = ObjTestNG.ChoseBrowser(driver, "Chrome");
+		driver.get("www.abc.com");
 		driver.get("http://www.uitestingplayground.com/");
-		
+		//To Check the conflicts
 		HomePage ObjHomePage = new HomePage(driver);
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//		JavascriptExecutor js = (JavascriptExecutor)driver;
-//		js.executeScript("Window.scrollBy(0,350)", "");
+		//To Check the conflicts
 		ObjHomePage.EnterDetails();
+		//To Check the conflicts
 		
 		
 	}
