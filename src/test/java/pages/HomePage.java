@@ -22,10 +22,15 @@ public class HomePage {
 	Utils ObjUtils = new Utils();
 
 	public void EnterDetails() {
+		//To check the conflicts
 		ObjUtils.Click(driver, Text);
+		//To check the conflicts
 		ObjUtils.Sendkeys(driver, MyButton, "FirstButton");
+		//To check the conflicts
 		ObjUtils.Click(driver, ButtonUpdate);
+		//To check the conflicts
 		ObjUtils.GetText(driver, ButtonUpdate);
+		//To check the conflicts
 
 	}
 
